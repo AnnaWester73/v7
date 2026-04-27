@@ -1,0 +1,84 @@
+# 1a
+Vilka strängar matchas av det reguljära uttrycket: "ab" ? Testa era svar på https://regex101.com/
+A) "a b"
+B) "aBBa"
+C) "sabotör"
+Svar:   A) Matchar inte då det är mellanslag mellan ab
+        B) Matchar inte då B är stor bokstav (versal)
+        C) Matchar då ab finns i ordet sabotör
+
+1b Betrakta uttrycket "nisse". Vad skriver jag för att matcha både "Nisse", "NISSE" och "nisse"?
+Svar: (?i)nisse eller [Nn][Ii][Ss][Ss][Ee]
+
+1c Vilka strängar matchas av "a*n" ?
+A)"an"
+B) "amerikan"
+C) "naturlig"
+D) "annandag"
+
+Svar: All matchar med a*n
+
+1e Vilka strängar matchas av "je.+e"?
+A) "je"
+B) "jee"
+C) "jeppe"
+D) "je je"
+
+Svar: C och D
+
+1f Vilka strängar matchas av "\san?\s"
+A) "sansad"
+B) " annan "
+C) "    an   na   an   "
+D) "be a darling"
+Svar: C och D
+
+1e Skriv ner med egna ord, vad följande uttryck matchar. "Strängar som innehåller…"
+A) "lines?"
+B) "^a*ö$"
+C) "[aeiouyåäö]+"
+D) "[123456789]\d*"
+F) "\d{4}-\d{2}-\d{2}"
+
+Svar A: Innehållet i ordet ska vara line eller lines
+Svar B: Innehållet i ordet antingen a eller inget a och följt av ett ö tex ö aö aaaaö
+Svar C: Innehållet i ordet ska innehålla minst en vokal. Tex e, a , aei
+Svar D: Innehållet en siffra mellan 1 och 9 där sista siffran kan vara valfri. Tex 9000, 53 ,1
+Svar F: Innehållet för siffor. Där första är 4st , andra och trede är 2st. Ett datumformat 9999-99-99
+
+2a)
+Som en utvecklare inom agila metoder
+vill jag kunna navigera i Agile helper till informationen om sprint retrospective
+så att jag kan läsa hur en sprint retrospective genomförs och känna mig förberedd inför mötet.
+
+2b
+Explicita tester (Användaren testar enligt user storyn):
+
+* Användaren öppnar sidan Agile helper i webbläsaren.
+* Användaren har 3 knapp val och välja mellan "Första", "Någonstans i mitten" och "Sista"
+* Användaren klickar på "Sista".
+* Användren får nya val "Börja varje dag med Daily Standup",
+    "Presentera ert arbete för produktägare under Sprintreview" och
+    "Avsluta sprinten med att utvärdera ert arbete i Sprint retrospective".
+* Användaren klickar på "Avsluta sprinten med att utvärdera ert arbete i Sprint retrospective"
+* Användaren hittar och läser beskrivningen av sprint retrospective.
+* Kontrollerar att beskrivningen finns och förklarar hur en retrospective genomförs, steg för steg.
+
+Implicita tester (sådant jag underförstått testar på vägen):
+
+* Att sidan laddas och visas ordentligt.
+* Att knapparna går att klicka på och reagerar.
+* Att jag förstår vad jag ska göra utan extra instruktioner.
+* Att texten är läsbar och snyggt presenterad.
+* Att jag kan gå tillbaka eller börja om om jag klickar fel.
+* Att sidan fungerar lika bra oavsett om jag är på dator eller mobil.
+
+
+
+
+
+
+
+
+
+

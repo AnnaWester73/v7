@@ -1,0 +1,41 @@
+1a Skriv ett regex som kontrollerar att det finns en längd i strängen, som anges i centimeter:
+"Fiskarna som jag fångade var 55 cm långa."
+
+Svar: \d+\s*cm
+\d+ en eller fler tal i texten
+\s* inget eller flera blankslag
+cm innehåller ordet cm (exakt)
+
+eller om cm skulle innehålla blankslag tex 55c m eller 55 c m ( inte så troligt)
+\d+\s*c\s*m
+
+
+1b Denna gången vill vi veta om det finns två längder.
+Svar: \d+\s*c\s*m.*\d+\s*c\s*m
+Exempel på text där .* ger komma, mellanslag eller punkt mellan längderna.
+"Fiskarna som jag fångade var 55 cm och 65 cm långa."
+"Fiskarna som jag fångade var 55 cm, 65 cm och 75 cm långa."
+
+1c Längderna ska vara samma enhet.
+"Fiskarna som jag fångade var 55 cm långa, så båda fick plats i min 1,23 m långa låda."
+Svar: \d+\s*(cm|m)\b.*\d+\s*\1\b
+(Hanterar så inget ord börjar på m med hjälp av \b,
+hanterar inte decimaler men var inte i uppgiften)
+
+3 Skriv ett regex som matchar ett datum skrivet
+enligt den internationella standarden ISO 8601,
+alltså 10 tecken med bindestreck mellan avdelningarna.
+Exempel: 2025-03-10.
+
+Svar: \d{4}-\d{2}-\d{2}
+
+4 Skriv ett regex som matchar ett pengavärde i siffror. Exempel på värden som ska matchas:
+200 kr
+12,50 kr
+0,35 kr
+
+Svar: \d+(,\d+)?\s*kr
+
+
+
+
