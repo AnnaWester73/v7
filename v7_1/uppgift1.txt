@@ -70,7 +70,7 @@ Implicita tester (sådant jag underförstått testar på vägen):
 * Att knapparna går att klicka på och reagerar.
 * Att jag förstår vad jag ska göra utan extra instruktioner.
 * Att texten är läsbar och snyggt presenterad.
-* Att jag kan gå tillbaka eller börja om om jag klickar fel.
+* Att jag kan gå tillbaka eller börja om, om jag klickar fel.
 * Att sidan fungerar lika bra oavsett om jag är på dator eller mobil.
 
 

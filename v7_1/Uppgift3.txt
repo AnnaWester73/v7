@@ -1,0 +1,48 @@
+[User story 1]
+Story: Som en användare,
+vill jag se mötet "sprint planning" som utspelar sig första dagen på en sprint,
+så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på knappen med texten "First"
+Klicka på knappen vars text innehåller "Sprint planning"
+Kontrollera att ett <dialog> element visas på sidan, som innehåller en rubrik med texten "Sprint planning"
+
+
+[User story 2]
+Story: Som en användare,
+vill jag kunna byta språk mellan englska och svenska,
+så att jag kan läsa innehållet på båda språken
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på engelska flaggan
+Verifiera att texten byts ut från svenska till engelska
+Klicka på den svenska flaggan
+Verifiera att texten byts ut från engelska till svenska
+
+[User story 3]
+Story: Som en användare,
+vill jag kunna starta en sprintplannering
+så att jag vet vad sprinten ska innehålla för task/uppgifter
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på knappen Första
+Verifiera att texten Första dagen i sprinten visas
+Verifiera att det visas 2 nya knappar.
+
+
+[User story 2]
+Story: Som en användare,
+vill jag kunna byta språk mellan englska och svenska,
+så att jag kan läsa innehållet på båda språken
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på engelska flaggan
+Verifiera att texten byts ut från svenska till engelska
+Klicka på den svenska flaggan
+Första valet är Börja sprinten med sprintplanning
+Andra valet är Börja varje dag med Daily standup.
