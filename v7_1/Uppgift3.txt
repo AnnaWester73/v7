@@ -12,7 +12,7 @@ Kontrollera att ett <dialog> element visas på sidan, som innehåller en rubrik 
 
 [User story 2]
 Story: Som en användare,
-vill jag kunna byta språk mellan englska och svenska,
+vill jag kunna byta språk mellan engelska och svenska,
 så att jag kan läsa innehållet på båda språken
 
 Scenario:
