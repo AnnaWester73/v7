@@ -8,9 +8,12 @@ URL = "https://lejonmanen.github.io/agile-helper/"
 def test_user_story_1_sprint_planning(page: Page):
     page.goto(URL)
 
-    page.get_by_test_id("btn-first").click()
-    page.get_by_role("button", name="Börja sprinten med Sprint").click()
-    page.get_by_role("heading", name="Sprint planning").click()
+    first_button = page.get_by_test_id("btn-first")
+    first_button.click()
+    begin_button = (page.get_by_role("button", name="Börja sprinten med Sprint"))
+    begin_button.click()
+    plan_button = (page.get_by_role("heading", name="Sprint planning"))
+    plan_button.click()
 
     expect(page.get_by_role("heading", name="Sprint planning")).to_be_visible()
 
